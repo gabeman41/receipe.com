@@ -15,13 +15,74 @@
     <!-- font awesome material-icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        .header {
+            position: relative;
+        }
+        .nav {
+            position: fixed;
+
+
+        }
+    </style>
+
 </head>
 <body>
     <!-- header -->
-    <header></header>
+    <header>
+        <nav class="white">
+            <div class="container">
+                <a class="brand-logo" href="">
+                    <img style="width: 10%;" src="img/logo.png" alt="">
+                    <ul class="right">
+                        <li>
+                            <a class="orange-text text-darken-4" href="">Home</a>
+                        </li>
+                        <li>
+                            <a class="orange-text text-darken-4" href="">Cakes</a>
+                        </li>
+                        <li>
+                            <a class="orange-text text-darken-4" href="">Soups</a>
+                        </li>
+                        <li>
+                            <a class="orange-text text-darken-4" href="">chicken</a>
+                        </li>
+                        <li>
+                            <a class="orange-text text-darken-4" href="">Customers</a>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </nav>
+
+        <!-- slides -->
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/cake_fruit.jpg" alt="" class="responsive-img">
+                    </li>
+                    <li>
+                        <img src="img/shrimp_soup.jpg" alt="" class="responsive-img">
+                    </li>
+                    <li>
+                        <img src="img/chicken_3.jpg" alt="" class="responsive-img">
+                    </li>
+                    <li>
+                        <img src="img/dessert_chocolate.jpg" alt="" class="responsive-img">
+                    </li>
+                    <li>
+                        <img src="img/ginger_cake.webp" alt="" class="responsive-img">
+                    </li>
+                </ul>
+        
+    </header>
     <main>
         <!-- Home -->
-        <section></section>
+        <section>
+            <div class="container">
+            <h4 class="orange-text text-darken-4">Hello there,foodies!</h4>
+            </div>
+        </section>
         
         <!-- customer comment -->
         <section></section>
@@ -44,5 +105,11 @@
    <!-- javascript here -->
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.slider').slider({
+    });
+    });
+    </script>
 </body>
 </html>
