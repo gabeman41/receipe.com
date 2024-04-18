@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>receipe.com</title>
+    <title>recipe.com</title>
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
     <meta name="author" content="Ukpai Anayochukwu Gabriel">
     <meta name="tags" content="soups,cakes,food,eating,cooking,receipe">
@@ -42,7 +42,7 @@
             <div class="container">
                 <a class="brand-logo" href="">
                     <img style="width: 17%;" src="img/logo.png" alt="">
-                    <ul class="right">
+                    <ul class="right hide-on-med-and-down">
                         <li>
                             <a class="orange-text text-darken-4" href="">Home</a>
                         </li>
@@ -53,15 +53,37 @@
                             <a class="orange-text text-darken-4" href="">Soups</a>
                         </li>
                         <li>
-                            <a class="orange-text text-darken-4" href="">chicken</a>
+                            <a class="orange-text text-darken-4" href="">Chicken</a>
                         </li>
                         <li>
                             <a class="orange-text text-darken-4" href="">Customers</a>
                         </li>
                     </ul>
                 </a>
+                <a class="sidenav-trigger right" href="#mobile">
+                    <i class="material-icons">menu</i>
+                </a>
             </div>
-        </nav><br><br><br>
+        </nav><br><br>
+        
+        <ul class="sidenav" id="mobile">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Cakes</a>
+            </li>
+            <li>
+                <a href="">Soups</a>
+            </li>
+            <li>
+                <a href="">Chicken</a>
+            </li>
+        <li>
+            <a href="">Customers</a>
+        </li>            
+
+        </ul>
 
         <!-- slides -->
             <div class="slider" id="top">
@@ -391,6 +413,7 @@
 
         <!-- soups -->
         <section>
+        
             <div class="parallax-container">
                 <div class="parallax">
                     <img src="img/soup.jpg" alt="" class="responsive-img"><br><br>
@@ -811,6 +834,7 @@
     $('.slider').slider(); 
     $('.collapsible').collapsible();
     $('.parallax').parallax();
+    $('.sidenav').sidenav();
     });
     </script>
 </body>
